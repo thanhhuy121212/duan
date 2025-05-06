@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên Hệ - WebSolutions</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Mapbox CSS -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">WebSolutions</a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">WebSolutions</a>
+
+          <button class="nav-close-btn" aria-label="đóng menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="home.html" class="navbar-link" data-nav-link>Trang chủ</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>Giới thiệu</a>
+          </li>
+
+          <li>
+            <a href="#services" class="navbar-link" data-nav-link>Dịch vụ</a>
+          </li>
+
+          <li>
+            <a href="#features" class="navbar-link" data-nav-link>Tính năng</a>
+          </li>
+
+          <li>
+            <a href="duan.html" class="navbar-link" data-nav-link>Dự án</a>
+          </li>
+
+          <li>
+            <a href="lienket.html" class="navbar-link" data-nav-link>Liên hệ</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="mở menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="#" class="btn-outline">Liên hệ ngay</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+  <main>
+    <article>
+
+    <!-- Contact Hero -->
+    <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle has-before">Chào mừng đến với WebSolutions</p>
+
+            <h1 class="h1 hero-title">Liên Hệ Với Chúng Tôi</h1>
+
+            <p class="hero-text">
+                Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn 24/7
+            </p>
+
+            <div class="btn-group">
+              <a href="#services" class="btn btn-primary">Khám phá dịch vụ</a>
+            </div>
+
+          </div>
+
+          <figure class="hero-banner has-before img-holder" style="--width: 650; --height: 650;">
+            <img src="./img/1.jpg" width="650" height="650" alt="banner chính" class="img-cover">
+          </figure>
+
+        </div>
+      </section>
+
+    <!-- Contact Info -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body text-center p-4">
+                <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
+                  <ion-icon name="call" style="font-size: 1.5rem;"></ion-icon>
+                </div>
+                <h3 class="h5 card-title">Điện thoại</h3>
+                <p class="card-text text-muted">Liên hệ trực tiếp với chúng tôi</p>
+                <a href="tel:+84987654321" class="btn btn-link text-decoration-none">0987.654.321</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body text-center p-4">
+                <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
+                  <ion-icon name="mail" style="font-size: 1.5rem;"></ion-icon>
+                </div>
+                <h3 class="h5 card-title">Email</h3>
+                <p class="card-text text-muted">Gửi yêu cầu qua email</p>
+                <a href="mailto:info@websolutions.vn" class="btn btn-link text-decoration-none">info@websolutions.vn</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body text-center p-4">
+                <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
+                  <ion-icon name="location" style="font-size: 1.5rem;"></ion-icon>
+                </div>
+                <h3 class="h5 card-title">Văn phòng</h3>
+                <p class="card-text text-muted">Đến thăm văn phòng chúng tôi</p>
+                <p class="mb-0">Tầng 5, Toà nhà số 123, đường ABC, quận XYZ, TP.HCM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <h2 class="h3 mb-4">Gửi tin nhắn cho chúng tôi</h2>
+                
+                <form id="contactForm" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="name" class="form-label">Họ và tên <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="name" required>
+                      <div class="invalid-feedback">
+                        Vui lòng nhập họ tên của bạn
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                      <input type="email" class="form-control" id="email" required>
+                      <div class="invalid-feedback">
+                        Vui lòng nhập email hợp lệ
+                      </div>
+                    </div>
+                    
+                    <div class="col-12">
+                      <label for="phone" class="form-label">Số điện thoại</label>
+                      <input type="tel" class="form-control" id="phone">
+                    </div>
+                    
+                    <div class="col-12">
+                      <label for="subject" class="form-label">Chủ đề <span class="text-danger">*</span></label>
+                      <select class="form-select" id="subject" required>
+                        <option value="" selected disabled>Chọn chủ đề</option>
+                        <option value="design">Thiết kế website</option>
+                        <option value="ecommerce">Website bán hàng</option>
+                        <option value="seo">Dịch vụ SEO</option>
+                        <option value="other">Khác</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Vui lòng chọn chủ đề
+                      </div>
+                    </div>
+                    
+                    <div class="col-12">
+                      <label for="message" class="form-label">Nội dung <span class="text-danger">*</span></label>
+                      <textarea class="form-control" id="message" rows="5" required></textarea>
+                      <div class="invalid-feedback">
+                        Vui lòng nhập nội dung tin nhắn
+                      </div>
+                    </div>
+                    
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="agree" required>
+                        <label class="form-check-label" for="agree">
+                          Tôi đồng ý với <a href="#" class="text-decoration-none">chính sách bảo mật</a>
+                        </label>
+                        <div class="invalid-feedback">
+                          Bạn cần đồng ý với điều khoản
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary px-4 py-2">Gửi tin nhắn</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-0">
+                <div id="map" style="height: 100%; min-height: 400px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="h3">Câu Hỏi Thường Gặp</h2>
+          <p class="text-muted">Những câu hỏi phổ biến về dịch vụ của chúng tôi</p>
+        </div>
+        
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item border-0 shadow-sm mb-3">
+            <h3 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Thời gian hoàn thành một website là bao lâu?
+              </button>
+            </h3>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Thời gian hoàn thành phụ thuộc vào loại website và yêu cầu cụ thể. Thông thường:
+                <ul>
+                  <li>Landing Page: 3-5 ngày</li>
+                  <li>Website doanh nghiệp: 7-15 ngày</li>
+                  <li>Website bán hàng: 15-30 ngày</li>
+                </ul>
+                Chúng tôi cam kết bàn giao đúng tiến độ đã thỏa thuận.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item border-0 shadow-sm mb-3">
+            <h3 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Tôi có được hỗ trợ sau khi bàn giao website không?
+              </button>
+            </h3>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Chúng tôi hỗ trợ khách hàng trọn đời:
+                <ul>
+                  <li>Bảo hành vĩnh viễn các lỗi phát sinh</li>
+                  <li>Hỗ trợ kỹ thuật 24/7 qua nhiều kênh</li>
+                  <li>Hướng dẫn sử dụng chi tiết</li>
+                  <li>Cập nhật tính năng mới định kỳ</li>
+                  <li>Tư vấn phát triển website lâu dài</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item border-0 shadow-sm mb-3">
+            <h3 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Quy trình làm việc như thế nào?
+              </button>
+            </h3>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Quy trình làm việc chuyên nghiệp của chúng tôi gồm 5 bước:
+                <ol>
+                  <li>Tiếp nhận yêu cầu và tư vấn</li>
+                  <li>Ký hợp đồng và đặt cọc</li>
+                  <li>Thiết kế giao diện và phát triển</li>
+                  <li>Kiểm thử và bàn giao</li>
+                  <li>Bảo hành và hỗ trợ</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="h3">Đội Ngũ Của Chúng Tôi</h2>
+          <p class="text-muted">Những chuyên gia sẽ hỗ trợ bạn</p>
+        </div>
+        
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="./assets/images/team1.jpg" class="card-img-top" alt="Nguyễn Văn A">
+              <div class="card-body text-center">
+                <h3 class="h5 card-title">Nguyễn Văn A</h3>
+                <p class="card-text text-muted">Trưởng phòng Thiết kế</p>
+                <div class="social-links">
+                  <a href="#" class="text-primary me-2"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="text-primary"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="./assets/images/team2.jpg" class="card-img-top" alt="Trần Thị B">
+              <div class="card-body text-center">
+                <h3 class="h5 card-title">Trần Thị B</h3>
+                <p class="card-text text-muted">Chuyên viên Lập trình</p>
+                <div class="social-links">
+                  <a href="#" class="text-primary me-2"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="text-primary"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="./assets/images/team3.jpg" class="card-img-top" alt="Lê Văn C">
+              <div class="card-body text-center">
+                <h3 class="h5 card-title">Lê Văn C</h3>
+                <p class="card-text text-muted">Chuyên viên SEO</p>
+                <div class="social-links">
+                  <a href="#" class="text-primary me-2"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="text-primary"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="./assets/images/team4.jpg" class="card-img-top" alt="Phạm Thị D">
+              <div class="card-body text-center">
+                <h3 class="h5 card-title">Phạm Thị D</h3>
+                <p class="card-text text-muted">Chăm sóc khách hàng</p>
+                <div class="social-links">
+                  <a href="#" class="text-primary me-2"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="text-primary"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand mb-4">
+            <a href="index.html" class="logo text-white text-decoration-none h3">WebSolutions</a>
+            <p class="footer-text mt-3">
+              Đơn vị thiết kế website chuyên nghiệp, uy tín hàng đầu Việt Nam.
+            </p>
+            
+            <form class="newsletter-form mt-4">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Nhập email để nhận ưu đãi" required>
+                <button class="btn btn-primary" type="submit">
+                  <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="col-md-4 col-lg-2">
+          <h3 class="footer-list-title h5 mb-4">Dịch Vụ Website</h3>
+          <ul class="footer-list list-unstyled">
+            <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Thiết kế Website</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Website Bán Hàng</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Website Tin Tức</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Landing Page</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">SEO Website</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-4 col-lg-2">
+          <h3 class="footer-list-title h5 mb-4">Công Ty</h3>
+          <ul class="footer-list list-unstyled">
+            <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">Giới Thiệu</a></li>
+            <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">Đội Ngũ</a></li>
+            <li class="mb-2"><a href="projects.html" class="text-white text-decoration-none">Dự Án</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Tin Tức</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Liên Hệ</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-4 col-lg-4">
+          <h3 class="footer-list-title h5 mb-4">Liên Hệ</h3>
+          <ul class="footer-list list-unstyled">
+            <li class="mb-3 d-flex align-items-start">
+              <ion-icon name="location" class="me-2 mt-1"></ion-icon>
+              <span>Tầng 5, Toà nhà số 123, đường ABC, quận XYZ, TP.HCM</span>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <ion-icon name="call" class="me-2"></ion-icon>
+              <a href="tel:+84987654321" class="text-white text-decoration-none">0987.654.321</a>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <ion-icon name="mail" class="me-2"></ion-icon>
+              <a href="mailto:info@websolutions.vn" class="text-white text-decoration-none">info@websolutions.vn</a>
+            </li>
+          </ul>
+          
+          <div class="social-list mt-4">
+            <a href="#" class="text-white me-3"><ion-icon name="logo-facebook" style="font-size: 1.5rem;"></ion-icon></a>
+            <a href="#" class="text-white me-3"><ion-icon name="logo-twitter" style="font-size: 1.5rem;"></ion-icon></a>
+            <a href="#" class="text-white me-3"><ion-icon name="logo-instagram" style="font-size: 1.5rem;"></ion-icon></a>
+            <a href="#" class="text-white"><ion-icon name="logo-youtube" style="font-size: 1.5rem;"></ion-icon></a>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="my-4">
+      
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="copyright mb-0">
+            &copy; 2023 WebSolutions | Bản quyền thuộc về <a href="#" class="text-white text-decoration-none">Thành Huy</a>
+          </p>
+        </div>
+        
+        <div class="col-md-6 text-md-end">
+          <ul class="footer-bottom-list list-inline mb-0">
+            <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Chính sách bảo mật</a></li>
+            <li class="list-inline-item ms-3"><a href="#" class="text-white text-decoration-none">Điều khoản dịch vụ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="./js.js"></script>
+
+  <!-- Ion Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Mapbox JS -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+  
+  <!-- Contact Form Validation -->
+  <script>
+    // Form validation
+    (function() {
+      'use strict';
+      
+      // Fetch the form we want to apply custom validation styles to
+      const form = document.getElementById('contactForm');
+      
+      // Prevent submission
+      form.addEventListener('submit', function(event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        
+        form.classList.add('was-validated');
+      }, false);
+    })();
+    
+    // Initialize map
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [106.6997, 10.7769], // Longitude, Latitude (TP.HCM)
+      zoom: 15
+    });
+    
+    // Add marker
+    new mapboxgl.Marker()
+      .setLngLat([106.6997, 10.7769])
+      .addTo(map);
+      
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl());
+  </script>
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dự Án - WebSolutions</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">WebSolutions</a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">WebSolutions</a>
+
+          <button class="nav-close-btn" aria-label="đóng menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="home.html" class="navbar-link" data-nav-link>Trang chủ</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>Giới thiệu</a>
+          </li>
+
+          <li>
+            <a href="#services" class="navbar-link" data-nav-link>Dịch vụ</a>
+          </li>
+
+          <li>
+            <a href="#features" class="navbar-link" data-nav-link>Tính năng</a>
+          </li>
+
+          <li>
+            <a href="duan.html" class="navbar-link" data-nav-link>Dự án</a>
+          </li>
+
+          <li>
+            <a href="lienket.html" class="navbar-link" data-nav-link>Liên hệ</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="mở menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="#" class="btn-outline">Liên hệ ngay</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+  <main>
+    <article>
+    <article>
+    <!-- Breadcrumb -->
+
+    <!-- Projects Hero Section -->
+    <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle has-before">Chào mừng đến với WebSolutions</p>
+
+            <h1 class="h1 hero-title">Dự Án Tiêu Biểu</h1>
+
+            <p class="hero-text">
+                Dự Án Tiêu Biểu
+            </p>
+
+            <div class="btn-group">
+              <a href="#services" class="btn btn-primary">Xem dự án</a>
+            </div>
+
+          </div>
+
+          <figure class="hero-banner has-before img-holder" style="--width: 650; --height: 650;">
+            <img src="./img/1.jpg" width="650" height="650" alt="banner chính" class="img-cover">
+          </figure>
+
+        </div>
+      </section>
+
+    <!-- Portfolio Filter -->
+    <section class="py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="h3">Danh Mục Dự Án</h2>
+            <p class="text-muted">Lọc theo loại dự án bạn quan tâm</p>
+          </div>
+      
+          <div class="text-center mb-4">
+            <div class="btn-group filter-button-group" role="group">
+              <button type="button" class="btn btn-outline-success active" data-filter="*">Tất cả</button>
+              <button type="button" class="btn btn-outline-success" data-filter=".business">Doanh nghiệp</button>
+              <button type="button" class="btn btn-outline-success" data-filter=".ecommerce">Bán hàng</button>
+              <button type="button" class="btn btn-outline-success" data-filter=".news">Tin tức</button>
+              <button type="button" class="btn btn-outline-success" data-filter=".landing">Landing Page</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Portfolio Grid -->
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <div class="row g-4 portfolio-grid">
+          <!-- Project 1 -->
+          <div class="col-md-6 col-lg-4 portfolio-item business">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+              <div class="position-relative">
+                <img src="./img/proxy-image (3).jpg" class="card-img-top" alt="Website doanh nghiệp ABC">
+                <div class="portfolio-overlay">
+                  <a href="./assets/images/project1.jpg" class="portfolio-popup" title="Website doanh nghiệp ABC">
+                    <i class="bi bi-plus-circle text-white fs-1"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Website doanh nghiệp ABC</h3>
+                <p class="card-text text-muted">Thiết kế website giới thiệu công ty với giao diện chuyên nghiệp</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="badge bg-primary">Doanh nghiệp</span>
+                  <a href="project-detail.html" class="btn btn-outline-success">Xem chi tiết</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-6 col-lg-4 portfolio-item ecommerce">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+              <div class="position-relative">
+                <img src="./img/proxy-image (1).jpg" class="card-img-top" alt="Website bán hàng XYZ">
+                <div class="portfolio-overlay">
+                  <a href="./img/proxy-image (1).jpg" class="portfolio-popup" title="Website bán hàng XYZ">
+                    <i class="bi bi-plus-circle text-white fs-1"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Website bán hàng XYZ</h3>
+                <p class="card-text text-muted">Thương mại điện tử với đầy đủ tính năng thanh toán, quản lý đơn hàng</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="badge bg-success">Bán hàng</span>
+                  <a href="project-detail.html" class="btn btn-outline-success">Xem chi tiết</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-6 col-lg-4 portfolio-item news">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+              <div class="position-relative">
+                <img src="./img/proxy-image (1).jpg" class="card-img-top" alt="Báo điện tử 123">
+                <div class="portfolio-overlay">
+                  <a href="./assets/images/project3.jpg" class="portfolio-popup" title="Báo điện tử 123">
+                    <i class="bi bi-plus-circle text-white fs-1"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Báo điện tử 123</h3>
+                <p class="card-text text-muted">Hệ thống quản lý nội dung mạnh mẽ cho trang tin tức</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="badge bg-info">Tin tức</span>
+                  <a href="project-detail.html" class="btn btn-outline-success">Xem chi tiết</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="col-md-6 col-lg-4 portfolio-item landing">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+              <div class="position-relative">
+                <img src="./img/proxy-image (1).jpg "class="card-img-top" alt="Landing Page sản phẩm mới">
+                <div class="portfolio-overlay">
+                  <a href="./assets/images/project4.jpg" class="portfolio-popup" title="Landing Page sản phẩm mới">
+                    <i class="bi bi-plus-circle text-white fs-1"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Landing Page sản phẩm mới</h3>
+                <p class="card-text text-muted">Trang đích tập trung chuyển đổi với tỷ lệ đăng ký 35%</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="badge bg-warning">Landing Page</span>
+                  <a href="project-detail.html" class="btn btn-outline-success">Xem chi tiết</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="col-md-6 col-lg-4 portfolio-item business">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+              <div class="position-relative">
+                <img src="./img/proxy-image (3).jpg" class="card-img-top" alt="Website công ty DEF">
+                <div class="portfolio-overlay">
+                  <a href="./assets/images/project5.jpg" class="portfolio-popup" title="Website công ty DEF">
+                    <i class="bi bi-plus-circle text-white fs-1"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Website công ty DEF</h3>
+                <p class="card-text text-muted">Thiết kế đẳng cấp thể hiện thương hiệu doanh nghiệp</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="badge bg-primary">Doanh nghiệp</span>
+                  <a href="project-detail.html" class="btn btn-outline-success">Xem chi tiết</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="col-md-6 col-lg-4 portfolio-item ecommerce">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+              <div class="position-relative">
+                <img src="./img/proxy-image.jpg" class="card-img-top" alt="Website thời trang ABC">
+                <div class="portfolio-overlay">
+                  <a href="./assets/images/project6.jpg" class="portfolio-popup" title="Website thời trang ABC">
+                    <i class="bi bi-plus-circle text-white fs-1"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Website thời trang ABC</h3>
+                <p class="card-text text-muted">Cửa hàng thời trang trực tuyến với giao diện sang trọng</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="badge bg-success">Bán hàng</span>
+                  <a href="project-detail.html" class="btn btn-outline-success">Xem chi tiết</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation" class="mt-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Trước</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Tiếp</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="h3">Khách Hàng Nói Về Chúng Tôi</h2>
+          <p class="text-muted">Những phản hồi từ khách hàng đã sử dụng dịch vụ</p>
+        </div>
+        
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="mb-3">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="card-text mb-4">"WebSolutions đã tạo cho chúng tôi một website tuyệt vời. Tỷ lệ chuyển đổi tăng 40% chỉ sau 2 tháng."</p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="./img/24.jpg" class="rounded-circle me-3" width="50" height="50" alt="Khách hàng">
+                  <div>
+                    <h5 class="mb-0 h6">Nguyễn Văn A</h5>
+                    <small class="text-muted">Giám đốc Công ty ABC</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="mb-3">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="card-text mb-4">"Đội ngũ chuyên nghiệp, hỗ trợ nhiệt tình. Website của chúng tôi lên top Google chỉ sau 3 tháng."</p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="./img/25.jpg" class="rounded-circle me-3" width="50" height="50" alt="Khách hàng">
+                  <div>
+                    <h5 class="mb-0 h6">Trần Thị B</h5>
+                    <small class="text-muted">Chủ cửa hàng XYZ</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="mb-3">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                </div>
+                <p class="card-text mb-4">"Rất hài lòng với dịch vụ. Website hoạt động ổn định, giao diện đẹp và dễ sử dụng."</p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="./img/26.jpeg" class="rounded-circle me-3" width="50" height="50" alt="Khách hàng">
+                  <div>
+                    <h5 class="mb-0 h6">Lê Văn C</h5>
+                    <small class="text-muted">CEO Startup DEF</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <!-- <section class="py-5 bg-primary text-white">
+      <div class="container py-4 text-center">
+        <h2 class="h1 mb-4">Bạn đã sẵn sàng có website chuyên nghiệp?</h2>
+        <p class="lead mb-4">Liên hệ ngay với chúng tôi để được tư vấn miễn phí</p>
+        <a href="contact.html" class="btn btn-light btn-lg px-4">Liên hệ ngay</a>
+      </div>
+    </section>
+  </main> -->
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand mb-4">
+            <a href="index.html" class="logo text-white text-decoration-none h3">WebSolutions</a>
+            <p class="footer-text mt-3">
+              Đơn vị thiết kế website chuyên nghiệp, uy tín hàng đầu Việt Nam.
+            </p>
+            
+            <form class="newsletter-form mt-4">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Nhập email để nhận ưu đãi" required>
+                <button class="btn btn-primary" type="submit">
+                  <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="col-md-4 col-lg-2">
+          <h3 class="footer-list-title h5 mb-4">Dịch Vụ Website</h3>
+          <ul class="footer-list list-unstyled">
+            <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Thiết kế Website</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Website Bán Hàng</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Website Tin Tức</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Landing Page</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">SEO Website</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-4 col-lg-2">
+          <h3 class="footer-list-title h5 mb-4">Công Ty</h3>
+          <ul class="footer-list list-unstyled">
+            <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">Giới Thiệu</a></li>
+            <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">Đội Ngũ</a></li>
+            <li class="mb-2"><a href="projects.html" class="text-white text-decoration-none">Dự Án</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Tin Tức</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Liên Hệ</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-4 col-lg-4">
+          <h3 class="footer-list-title h5 mb-4">Liên Hệ</h3>
+          <ul class="footer-list list-unstyled">
+            <li class="mb-3 d-flex align-items-start">
+              <ion-icon name="location" class="me-2 mt-1"></ion-icon>
+              <span>Tầng 5, Toà nhà số 123, đường ABC, quận XYZ, TP.HCM</span>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <ion-icon name="call" class="me-2"></ion-icon>
+              <a href="tel:+84987654321" class="text-white text-decoration-none">0987.654.321</a>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <ion-icon name="mail" class="me-2"></ion-icon>
+              <a href="mailto:info@websolutions.vn" class="text-white text-decoration-none">info@websolutions.vn</a>
+            </li>
+          </ul>
+          
+          <div class="social-list mt-4">
+            <a href="#" class="text-white me-3"><ion-icon name="logo-facebook" style="font-size: 1.5rem;"></ion-icon></a>
+            <a href="#" class="text-white me-3"><ion-icon name="logo-twitter" style="font-size: 1.5rem;"></ion-icon></a>
+            <a href="#" class="text-white me-3"><ion-icon name="logo-instagram" style="font-size: 1.5rem;"></ion-icon></a>
+            <a href="#" class="text-white"><ion-icon name="logo-youtube" style="font-size: 1.5rem;"></ion-icon></a>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="my-4">
+      
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="copyright mb-0">
+            &copy; 2023 WebSolutions | Bản quyền thuộc về <a href="#" class="text-white text-decoration-none">Thành Huy</a>
+          </p>
+        </div>
+        
+        <div class="col-md-6 text-md-end">
+          <ul class="footer-bottom-list list-inline mb-0">
+            <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Chính sách bảo mật</a></li>
+            <li class="list-inline-item ms-3"><a href="#" class="text-white text-decoration-none">Điều khoản dịch vụ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="./duan.js"></script>
+
+
+  <!-- Ion Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
